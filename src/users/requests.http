@@ -1,0 +1,18 @@
+### Create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "kdjfnfksnjkfnkdsnfjkdsjn@gmail.com",
+    "password": "dfjnskfdksnjfds"
+}
+
+### Not create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "kdjfnfksnjkfnkdsnfjkdsil.com",
+    "password": "dfjnskfdksnjfds",
+    "jhbdsjh": "dfjnskfdksnjfds"
+}
