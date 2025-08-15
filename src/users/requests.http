@@ -3,7 +3,7 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "kdjfnfksnjkfnkdsnfjkdsjn@gmail.com",
+    "email": "asdf@gmail.com",
     "password": "dfjnskfdksnjfds"
 }
 
@@ -15,4 +15,28 @@ Content-Type: application/json
     "email": "kdjfnfksnjkfnkdsnfjkdsil.com",
     "password": "dfjnskfdksnjfds",
     "jhbdsjh": "dfjnskfdksnjfds"
+}
+
+
+### Get a user
+GET http://localhost:3000/auth/1
+Content-Type: application/json
+
+
+### Get a user by email
+GET http://localhost:3000/auth?email=asdf@gmail.com
+Content-Type: application/json
+
+
+### Remove a user
+DELETE  http://localhost:3000/auth/1
+Content-Type: application/json
+
+
+### Update user
+PATCH  http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+    "email": "jjjjjj@gmail.com"
 }
