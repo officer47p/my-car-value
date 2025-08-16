@@ -19,7 +19,7 @@ Content-Type: application/json
 
 
 ### Get a user
-GET http://localhost:3000/auth/1
+GET http://localhost:3000/auth/2
 Content-Type: application/json
 
 
