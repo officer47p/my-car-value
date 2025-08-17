@@ -7,6 +7,16 @@ Content-Type: application/json
     "password": "hello"
 }
 
+
+####
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "damn@gmail.com",
+    "password": "hello"
+}
+
 ### Not create a new user
 POST http://localhost:3000/auth/signup
 Content-Type: application/json
