@@ -5,6 +5,7 @@ import { UpdateUserDto } from './dtos/update-user.dto';
 import { Serialize, SerializeInterceptor } from 'src/interceptors/serialize.interceptor';
 import { UserDto } from './dtos/user.dto';
 import { AuthService } from './auth.service';
+import { CurrentUser } from './decorators/current-user.decorator';
 
 @Controller('auth')
 @Serialize(UserDto)
@@ -20,8 +21,8 @@ export class UsersController {
     }
 
     @Get("/profile")
-    getProfile(@Session() session: any) {
-        return this.usersService.findOne(session.userId)
+    getProfile(@CurrentUser() user: string) {
+        return user;
     }
 
     @Post("/signout")
